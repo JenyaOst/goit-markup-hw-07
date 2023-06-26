@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href="./portfolio.html"
@@ -59,17 +59,93 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn js-open-menu">
+          <svg class="menu-open-btn-svg">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg></button
+        >
       </div>
-    </header> -->
+      <div class="mob-menu js-menu-container">
+        <div class="">
+          <button type="button" class="menu-close-btn js-close-menu">
+            <svg class="menu-close-btn-svg">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <div class="mob-container">
+            <nav class="mob-menu-nav">
+              <ul class="mob-menu-ul">
+                <li class="mob-menu-li">
+                  <a class="mob-menu-link one" href="./index.html">Studio</a>
+                </li>
+                <li class="mob-menu-li">
+                  <a class="mob-menu-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="mob-menu-li">
+                  <a class="mob-menu-link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="mob-menu-address">
+              <ul class="mob-menu-address-ul">
+                <li class="mob-menu-address-tel">
+                  <a class="mob-menu-address-link-tel" href="tel:+110001111111">
+                    +11 (000) 111-11-11
+                  </a>
+                </li>
+                <li class="mob-menu-address-mail">
+                  <a
+                    class="mob-menu-address-link-mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="traling-icons-mob-menu">
+              <li class="team-icons">
+                <a href="" class="traling-icons-link">
+                  <svg class="team-icons-svg" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-icons">
+                <a href="" class="traling-icons-link">
+                  <svg class="team-icons-svg" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-icons">
+                <a href="" class="traling-icons-link">
+                  <svg class="team-icons-svg" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-icons">
+                <a href="" class="traling-icons-link">
+                  <svg class="team-icons-svg" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- <section class="solutions-section">
+      <section class="solutions-section">
         <div class="container solutions-container">
           <h1 class="solutions-title">Effective Solutions for Your Business</h1>
           <button type="button" class="solutions-btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="values-section">
         <div class="container values-container">
           <h2 class="visually-hidden">Values</h2>
@@ -162,7 +238,7 @@
       <section class="team-section">
         <div class="container team-container">
           <h2 class="team-top-title">Our Team</h2>
-          <ul class="team-list list">
+          <ul class="our-team list">
             <li class="team-background-photo">
               <img
                 src="./images/image1.jpg"
@@ -334,7 +410,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="customer-section">
+      <section class="customer-section">
         <div class="container customer-container">
           <h2 class="customer-title">Customers</h2>
           <ul class="customer-list list">
@@ -382,9 +458,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="logo-footer-div">
           <a class="footer-logo link" href="./portfolio.html"
@@ -449,7 +525,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
@@ -507,7 +583,8 @@
               name="user-comment"
               id="user-comment"
               class="modal-textarea"
-              placeholder="Text input"></textarea>
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="checkbox-container">
             <input
@@ -536,5 +613,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
