@@ -298,11 +298,19 @@ address {
   width: 100%;
   margin: auto;
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/StudioBG.jpg);
+    url(../images/Dark-bg-MOB-1x.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .solutions-section {
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/Dark-bg-MOB-2x.jpg )
+}
 }
 .solutions-btn {
   display: block;
@@ -1091,7 +1099,17 @@ button {
   }
   .solutions-section {
     padding: 112px 0;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/Dark-bg-TAB-1x.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .solutions-section {
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/Dark-bg-TAB-2x.jpg )
+}
+}
 
   .solutions-title {
     font-size: 56px;
@@ -1245,7 +1263,17 @@ letter-spacing: 0.48px;
   
   .solutions-section {
    padding: 188px 0;
+   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+   url(../images/StudioBG.jpg);
   } 
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .solutions-section {
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/Dark-bg-DT-2x.jpg )
+}
+}
   .solutions-title {
     width: 496px;
   }
