@@ -249,7 +249,6 @@ li {
 /* ******* */
 .link {
   text-decoration: none;
-  font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -257,8 +256,6 @@ li {
 }
 ul .nav {
   color: var(--head-color);
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -1143,6 +1140,12 @@ button {
   .team-background-photo {
     width: calc((100% - 24px) / 2);
   }
+  .team-top-title{
+    font-size: 36px;
+line-height: 40px;
+letter-spacing: 0.72px;
+text-transform: capitalize;
+  }
  
   .customer-container {
     max-width: 582px;
@@ -1201,6 +1204,12 @@ letter-spacing: 0.48px;
 /* Десктоп */
 @media screen and (min-width: 1158px) {
 
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+
   .header-link {
     position: relative;
     font-weight: 500;
@@ -1233,7 +1242,9 @@ letter-spacing: 0.48px;
   .header-link:focus {
     color: var(--logo-color);
   }
-  
+  .header-logo{ 
+  margin-right: 76px;
+}
   .header-contacts {
     font-style: normal;
     margin-left: auto;
@@ -1242,7 +1253,7 @@ letter-spacing: 0.48px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: #434455;
     padding-top: 24px;
     padding-bottom: 24px;
     transition-property: color;
@@ -1264,7 +1275,10 @@ letter-spacing: 0.48px;
   .solutions-section {
    padding: 188px 0;
    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-   url(../images/StudioBG.jpg);
+   url(../images/people-office\ 1.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
   } 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -1274,8 +1288,19 @@ letter-spacing: 0.48px;
       url(../images/Dark-bg-DT-2x.jpg )
 }
 }
+
   .solutions-title {
     width: 496px;
+      font-size: 56px;
+      line-height: 1.07;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: var(--page-color);
+      max-width: 496px;
+      min-height: 120px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 48px;
   }
   .container {
     max-width: 1158px;
@@ -1286,7 +1311,14 @@ letter-spacing: 0.48px;
   .values-container {
     width: 1158px;
   }
- 
+  .values-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--first-title-color);
+    margin-bottom: 8px;
+  }
   .values-paragraph-list {
     width: calc((100% - 72px) / 4);
     padding-right: 0;
@@ -1295,6 +1327,10 @@ letter-spacing: 0.48px;
   .about-title{
     text-align: center;
     margin-bottom: 72px;
+    font-size: 36px;
+line-height: 40px;
+letter-spacing: 0.72px;
+text-transform: capitalize;
   }
   .icon-container {
     display: flex;
@@ -1355,10 +1391,19 @@ letter-spacing: 0.48px;
   .customer-container{
     max-width: 1158px;
   }
+  .customer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
 
   .footer {
     width: 1158px;
     margin: 0 auto;
+    background-color: var(--first-title-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .footer-container {
     max-width: 1158px;
