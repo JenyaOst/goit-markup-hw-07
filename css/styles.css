@@ -301,12 +301,16 @@ address {
   background-position: center;
   background-size: cover;
 }
+
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .solutions-section {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/Dark-bg-MOB-2x.jpg )
+    url(../images/Dark-bg-MOB-2x.jpg );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 }
 .solutions-btn {
@@ -1107,7 +1111,10 @@ button {
   (min-resolution: 2dppx) {
     .solutions-section {
       background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/Dark-bg-TAB-2x.jpg )
+      url(../images/Dark-bg-TAB-2x.jpg );
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
 }
 }
 
@@ -1180,24 +1187,14 @@ text-transform: capitalize;
   .footer-input {
     width: 264px;
   }
-  .header-contact-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+
   .header-contact-link {
     font-size: 12px;
 line-height: 1.1;
 letter-spacing: 0.48px;
     color: var(--text-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1283,14 +1280,7 @@ letter-spacing: 0.48px;
    background-position: center;
    background-size: cover;
   } 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .solutions-section {
-      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people-office\ 1-2x.jpg )
-}
-}
+
 
   .solutions-title {
     width: 496px;
@@ -1308,6 +1298,17 @@ letter-spacing: 0.48px;
   .container {
     max-width: 1158px;
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .solutions-section {
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office\ 2x.jpg );
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+}
   .values-section {
     padding: 120px 0;
   }
