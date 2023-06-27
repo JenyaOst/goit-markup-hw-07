@@ -154,15 +154,15 @@ li {
 .mob-container {
   position: absolute;
   height: 100%;
-  padding: 80px 40px;
+  padding: 60px 30px 0px 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
+
 .menu-close-btn {
   position: absolute;
-  right: 24px;
-  top: 24px;
+  right: 12px;
+  top: 12px;
   background: rgba(231, 233, 252, 0.1);
 
   border: 1px solid rgba(46, 47, 66, 0.1);
@@ -180,11 +180,13 @@ li {
   height: 8px;
 }
 
-
+.mob-menu-ul{
+  margin-bottom: 224px;
+}
 .mob-menu-li {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 32px;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
 }
@@ -201,7 +203,7 @@ li {
 }
 .mob-menu-address-tel {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   margin-bottom: 40px;
@@ -242,7 +244,7 @@ li {
 .traling-icons-mob-menu {
   display: flex;
   justify-content: space-between;
-  gap: 0;
+  gap: 18px;
   
 }
 
@@ -1024,19 +1026,55 @@ button {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ////// */
-@media screen and (min-width: 428px) {
+/* @media screen and (min-width: 428px) {
   .traling-icons-mob-menu{
     justify-content: flex-start;
     gap: 56px;
   }
-}
-
-@media screen and (max-width: 428px) {
-  .modal{
-    width: 100%;
+  .mob-menu-ul{
+    margin-bottom: 284px;
   }
+  .mob-container{
+    height: 100%; 
+  }
+} */
+@media screen and (max-width: 428px) 
+{  .modal{
+  width: 100%;
+ 
+}}
+  @media screen and (min-width: 428px) {
+    .traling-icons-mob-menu{
+      justify-content: flex-start;
+      gap: 56px;
+    }
+    .mob-menu-ul{
+      margin-bottom: 284px;
+    }
+    .mob-container{
+      height: 100%; 
+      padding: 80px 40px 0px 40px;
+    }
+    .mob-menu-address-tel {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      margin-bottom: 40px;
+    }
+    .mob-menu-li {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 40px;
+      letter-spacing: 0.02em;
+
+    }
+  }
+
+
   
-}
+  
+
 /* Планшет */
 @media screen and (min-width: 768px) {
   .mob-menu {
