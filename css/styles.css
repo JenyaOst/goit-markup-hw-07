@@ -1275,7 +1275,7 @@ letter-spacing: 0.48px;
   .solutions-section {
    padding: 188px 0;
    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-   url(../images/people-office\ 1.png);
+   url(../images/people-office\ 1.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -1399,7 +1399,7 @@ text-transform: capitalize;
   }
 
   .footer {
-    width: 1158px;
+    /* width: 1158px; */
     margin: 0 auto;
     background-color: var(--first-title-color);
     padding-top: 100px;
