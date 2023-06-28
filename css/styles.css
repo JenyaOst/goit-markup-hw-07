@@ -154,9 +154,10 @@ li {
 .mob-container {
   position: absolute;
   height: 100%;
-  padding: 60px 30px 0px 30px;
+  padding: 60px 30px 30px 30px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-close-btn {
@@ -181,14 +182,15 @@ li {
 }
 
 .mob-menu-ul{
-  margin-bottom: 224px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .mob-menu-li {
   font-weight: 700;
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.02em;
-  margin-bottom: 20px;
 }
 
 .mob-menu-link {
@@ -199,6 +201,7 @@ li {
   color: #404BBF;
 }
 .mob-menu-address {
+  display: flex;
   margin-bottom: 48px;
 }
 .mob-menu-address-tel {
@@ -761,9 +764,13 @@ button {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--icons-customers);
+  color: #8E8F99;
   margin-bottom: 4px;
   display: block;
+  opacity: 0.5;
+}
+.modal-textarea::placeholder{
+  color: #8E8F99;
 }
 
 .modal-input {
@@ -843,6 +850,7 @@ button {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 
 .user-privacy:checked + .check-text .modal-privacy-text {
@@ -853,6 +861,7 @@ button {
 
 .modal-link {
   color: var(--button-color);
+  margin-left: 8px;
 }
 
 .visually-hidden {
@@ -1048,12 +1057,9 @@ button {
       justify-content: flex-start;
       gap: 56px;
     }
-    .mob-menu-ul{
-      margin-bottom: 284px;
-    }
     .mob-container{
       height: 100%; 
-      padding: 80px 40px 0px 40px;
+      padding: 80px 40px 40px 40px;
     }
     .mob-menu-address-tel {
       font-weight: 700;
@@ -1067,8 +1073,11 @@ button {
       font-size: 36px;
       line-height: 40px;
       letter-spacing: 0.02em;
+      display: flex;
+      grid-gap: 40px;
 
     }
+
   }
 
 
@@ -1097,7 +1106,14 @@ button {
   .header-contacts {
     flex-direction: column;
     justify-content: center;
+    gap: 18px;
   }
+  .header-contacts-list{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+  }
+
   .header-contacts {
     margin-left: 20px;
   }
@@ -1300,6 +1316,7 @@ letter-spacing: 0.48px;
   }
   .header-contacts-list {
     display: flex;
+    flex-direction: row;
     gap: 40px;
   }
   .header-contact-link:hover {
